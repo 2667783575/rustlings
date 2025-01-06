@@ -20,6 +20,13 @@ fn main() {
 #[cfg(test)]
 mod tests {
     use super::*;
+    fn calculate_price_of_apples(val: i32) -> i32 {
+        if val <= 40 {
+            val * 2
+        } else {
+            val
+        }
+    }
 
     #[test]
     fn verify_test() {
